@@ -1,0 +1,6 @@
+package app;
+
+public enum Color {
+	BEIGE, BLACK, BLUE, BROWN, CLEAR, GOLD, GREEN, GREY, IVORY, 
+	MULTI, ORANGE, PINK, PURPLE, RED, SILVER, WHITE, YELLOW
+}

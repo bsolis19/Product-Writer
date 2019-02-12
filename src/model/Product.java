@@ -4,6 +4,7 @@ import app.Style;
 
 public abstract class Product {
 
+	private String id;
 	private float price;
 	private String title;
 	private String[] imgURLs;
@@ -30,6 +31,15 @@ public abstract class Product {
 		this.qty = qty;
 		this.variation = variation;
 	}
+	
+	public String getId(String id) {
+		return this.id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
+	}
+	
 	public float getPrice() {
 		return price;
 	}

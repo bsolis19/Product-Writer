@@ -1,18 +1,7 @@
 package gui;
 
 import java.awt.*;        // Using AWT layouts
-import java.awt.event.*;  // Using AWT event classes and listener interfaces
-import java.io.File;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import javax.swing.*;     // Using Swing components and containers
-
-import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-
-import mod.ExcelWriter;
 
 // A Swing GUI application inherits from top-level container javax.swing.JFrame
 public class AppFrame extends JFrame {

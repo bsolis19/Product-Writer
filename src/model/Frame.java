@@ -1,7 +1,5 @@
 package model;
 
-import app.Style;
-
 public class Frame extends Product{
 
 	private double frameWidth;
@@ -13,16 +11,8 @@ public class Frame extends Product{
 	
 	
 	
-	protected Frame(double price, String title, String[] imgURLs, String desc, Style style, double height,
-			double length, double width, int qty, double frameWidth, double frameDepth, double rabbetDepth,
-			int openingWidth, int openingHeight, boolean hasGlass) {
-		super(price, title, imgURLs, desc, style, height, length, width, qty);
-		this.frameWidth = frameWidth;
-		this.frameDepth = frameDepth;
-		this.rabbetDepth = rabbetDepth;
-		this.openingWidth = openingWidth;
-		this.openingHeight = openingHeight;
-		this.hasGlass = hasGlass;
+	protected Frame(String id) {
+		super(id);
 	}
 
 

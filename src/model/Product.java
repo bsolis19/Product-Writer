@@ -18,18 +18,8 @@ public abstract class Product {
 	
 	public Product() {}
 	
-	public Product(float price, String title, String[] imgURLs, String desc, Style style, float height, float length,
-			float width, int qty, boolean variation) {
-		this.price = price;
-		this.title = title;
-		this.imgURLs = imgURLs;
-		this.desc = desc;
-		this.style = style;
-		this.height = height;
-		this.length = length;
-		this.width = width;
-		this.qty = qty;
-		this.variation = variation;
+	public Product(String id) {
+		this.id = id;
 	}
 	
 	public String getId(String id) {

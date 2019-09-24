@@ -3,6 +3,9 @@ package gui;
 import java.awt.*;        // Using AWT layouts
 import javax.swing.*;     // Using Swing components and containers
 
+import com.jgoodies.looks.plastic.Plastic3DLookAndFeel;
+import com.jgoodies.looks.plastic.PlasticXPLookAndFeel;
+
 // A Swing GUI application inherits from top-level container javax.swing.JFrame
 public class AppFrame extends JFrame {
 
@@ -12,6 +15,12 @@ public class AppFrame extends JFrame {
 	public static final String TITLE = "Product Form";
 
 	public AppFrame() {
+		try{
+			UIManager.setLookAndFeel(new Plastic3DLookAndFeel());//using jgoodies look
+			SwingUtilities.updateComponentTreeUI(this);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		setTitle(TITLE);
 		setMinimumSize(new Dimension(FRAME_WIDTH, FRAME_HEIGHT));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
